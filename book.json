@@ -1,0 +1,10 @@
+{
+  "variables" : {
+    "draft"   : "yes",
+    "title"   : "Minimum Platform Specification",
+    "version" : "Revision 0.7"
+  },
+
+  "plugins": ["puml"],
+  "pluginsConfig": {}
+}
