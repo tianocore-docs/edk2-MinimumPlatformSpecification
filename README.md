@@ -77,31 +77,3 @@ Copyright (c) 2019, Intel Corporation. All rights reserved.
 | Revision   | Revision History   | Date        |
 | ---------- | ------------------ | ----------- |
 | 0.7        | Initial release    | May   2019  |
-
-THIS SPECIFICATION IS PROVIDED "AS IS" WITH NO WARRANTIES WHATSOEVER,
-
-INCLUDING ANY WARRANTY OF MERCHANTABILITY, NONINFRINGEMENT, FITNESS
-
-FOR ANY PARTICULAR PURPOSE, OR ANY WARRANTY OTHERWISE ARISING OUT OF ANY
-PROPOSAL,
-
-SPECIFICATION OR SAMPLE. Except for a limited copyright license to copy this
-specification for internal use only, no license, express or implied, by
-estoppel or otherwise, to any intellectual property rights is granted herein.
-
-Intel disclaims all liability, including liability for infringement of any
-proprietary rights, relating to implementation of information in this
-specification. Intel does not warrant or represent that such implementation(s)
-will not infringe such rights.
-
-Designers must not rely on the absence or characteristics of any features or
-instructions marked "reserved" or "undefined." Intel reserves these for future
-definition and shall have no responsibility whatsoever for conflicts or
-incompatibilities arising from future changes to them.
-
-Intel and the Intel logo are trademarks or registered trademarks of Intel
-Corporation or its subsidiaries in the United States and other countries.
-
-* Other names and brands may be claimed as the property of others.
-
-Copyright © 2019, Intel Corporation
