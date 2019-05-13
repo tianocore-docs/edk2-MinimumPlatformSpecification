@@ -1,5 +1,5 @@
 <!--- @file
-  13 Appendix: Interface Definitions
+  Appendix C Advanced Configuration and Power Interface (ACPI)
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,7 +29,9 @@
 
 -->
 
-## 13.1 Overview
+## Appendix C Advanced Configuration and Power Interface (ACPI) Overview
 
-This section contains interface definitions defined in the Minimum Platform architecture.
+This section documents the layout and implementation guidelines of the ACPI
+tables generated for the platform. The implementation guidelines for ACPI code
+will focus on coding practices for ASL irrespective of platform code details.
 

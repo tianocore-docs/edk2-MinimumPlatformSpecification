@@ -1,5 +1,5 @@
 <!--- @file
-  10.3 BDS Hook Points
+  Appendix A.3 BDS Hook Points
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,7 +29,7 @@
 
 -->
 
-## 10.3 BDS Hook Points
+## A.3 BDS Hook Points
 
 **BDS Hook Point Summary**
 

@@ -1,5 +1,5 @@
 <!--- @file
-  12.1 Layout
+  Appendix C.4 Flow Diagrams
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,23 +29,13 @@
 
 -->
 
-## 12.1 Layout
+## C.4 Flow Diagrams
 
-ACPI tables will be organized into a set of mandatory tables defined in this section
-and optional tables provided in the form of an SSDT.
+This section describes the flow for table integration and installing during
+boot. Device nodes will be generated and added to DSDT or SSDT by the device
+modules. Once the DSDT and SSDT are complete, they will be installed and
+published by the ACPI DXE driver.
 
-### 12.1.1 Mandatory Tables
+![Figure 12 ACPI Platform FLow](/media/12_acpi_platform_flow.png)
+###### Figure 12 ACPI Platform Flow
 
-The mandatory tables are composed of the minimum set of tables required to boot
-an ACPI compliant OS. These tables are intended to be present in Stage IV and
-later stages. The contents of these tables might differ based on build stage,
-it is described in the Table Contents sub-section.
-
-The following tables fall under the mandatory tables list:
-1. RSDP
-2. RSDT/XSDT
-3. FADT/FACS
-4. DSDT
-5. MADT
-6. MCFG
-7. HPET

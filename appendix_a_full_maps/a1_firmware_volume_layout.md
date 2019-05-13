@@ -1,5 +1,5 @@
 <!--- @file
-  10.1 Firmware Volume Layout
+  Appendix A.1 Firmware Volume Layout
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,7 +29,7 @@
 
 -->
 
-## 10.1 Firmware Volume Layout
+## A.1 Firmware Volume Layout
 
 This is a logical firmware volume layout by stage.
 

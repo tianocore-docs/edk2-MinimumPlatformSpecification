@@ -1,5 +1,5 @@
 <!--- @file
-  11.2 Test Point Check Infrastructure
+  Appendix B Global Configuration
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,36 +29,8 @@
 
 -->
 
-## 11.2 Test Point Check Infrastructure
+## Appendix B Global Configuration Overview
 
-Today's platforms are tested against several test suites such as Chipsec,
-Windows Hardware Security Test Infrastructure (HSTI), Windows Hardware Logo Kit
-(HLK), Linux UEFI Validation (LUV), and others. However, platforms may have
-platform-specific requirements not covered by test suites enforcing
-specification or general hardware compliance. The Test Point Check
-infrastructure is intended to test that actions such as MTRRs are configured
-correctly, FV HOBs are reported properly, no 3rd party options ROMs are
-executed before allowed, MemoryTypeInformation is reported correctly, and any
-other custom logic that platform implementer considers appropriate based on the
-platform requirements.
+This appendix section provides configuration mechanisms that are global and therefore
+are not constrained to any particular stage section.
 
-The Test Point infrastructure is supported by two primary libraries,
-TestPointLib and TestPointCheckLib. TestPointLib reports test results via the
-`ADAPTER_INFO_PLATFORM_TEST_POINT` structure defined below. The test result is
-validated in the TestPointCheckLib.
-
-```c
-typedef struct {
-  UINT32 Version;
-  UINT32 Role;
-  CHAR16 ImplementationID[256];
-  UINT32 FeaturesSize;
-
-  //UINT8 FeaturesImplemented[]; <- PCD set to define features
-  //UINT8 FeaturesVerified[]; <- PCD read and set to determine features verified
-  //CHAR16 ErrorString[];
-} ADAPTER_INFO_PLATFORM_TEST_POINT;
-```
-
-![Test Point Check Infrastructure](/media/11_test_point_check_infrastructure.png)
-###### Figure 11 Test Point Check Infrastructure

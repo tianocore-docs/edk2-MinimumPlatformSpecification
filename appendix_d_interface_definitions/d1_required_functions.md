@@ -1,5 +1,5 @@
 <!--- @file
-  13.2 Required Functions
+  Appendix D.1 Required Functions
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,11 +29,11 @@
 
 -->
 
-## 13.2 Required Functions
+## D.1 Required Functions
 
-### 13.2.1 BoardPorting.SEC
+### D.1.1 BoardPorting.SEC
 
-#### 13.2.1.1 ResetHandler (*)
+#### D.1.1.1 ResetHandler (*)
 ```
 ; For IA32, the reset vector must be at 0xFFFFFFF0, i.e., 4G-16 byte
 ; Execution starts here upon power-on/platform-reset.
@@ -54,9 +54,9 @@ ApStartup:
     DW      -3
 ```
 
-### 13.2.2 BoardPorting.PEI
+### D.1.2 BoardPorting.PEI
 
-#### 13.2.2.1 ReportPreMemFv
+#### D.1.2.1 ReportPreMemFv
 
 ```c
 VOID
@@ -65,7 +65,7 @@ ReportPreMemFv (
   );
 ```
 
-#### 13.2.2.2 BoardDetect
+#### D.1.2.2 BoardDetect
 
 ```c
 EFI_STATUS
@@ -75,7 +75,7 @@ BoardDetect (
   );
 ```
 
-#### 13.2.2.3 BoardDebugInit
+#### D.1.2.3 BoardDebugInit
 
 ```c
 EFI_STATUS
@@ -85,7 +85,7 @@ BoardDebugInit (
   );
 ```
 
-#### 13.2.2.4 PlatformHookSerialPortInitialize
+#### D.1.2.4 PlatformHookSerialPortInitialize
 
 ```c
 /**
@@ -106,7 +106,7 @@ PlatformHookSerialPortInitialize (
   );
 ```
 
-#### 13.2.2.5 BoardBootModeDetect
+#### D.1.2.5 BoardBootModeDetect
 
 ```c
 EFI_BOOT_MODE
@@ -116,7 +116,7 @@ BoardBootModeDetect (
   );
 ```
 
-#### 13.2.2.6 BoardInitBeforeMemoryInit
+#### D.1.2.6 BoardInitBeforeMemoryInit
 
 ```c
 EFI_STATUS
@@ -126,7 +126,7 @@ BoardInitBeforeMemoryInit (
   );
 ```
 
-#### 13.2.2.7 SiliconPolicyUpdatePreMemory
+#### D.1.2.7 SiliconPolicyUpdatePreMemory
 
 ```c
 /**
@@ -156,7 +156,7 @@ SiliconPolicyUpdatePreMemory (
   );
 ```
 
-#### 13.2.2.8 ReportPostMemFv
+#### D.1.2.8 ReportPostMemFv
 
 ```c
 VOID
@@ -165,7 +165,7 @@ ReportPostMemFv (
   );
 ```
 
-#### 13.2.2.9 BoardInitAfterMemoryInit
+#### D.1.2.9 BoardInitAfterMemoryInit
 
 ```c
 EFI_STATUS
@@ -175,11 +175,11 @@ BoardInitAfterMemoryInit (
   );
 ```
 
-#### 13.2.2.10 SetCacheMtrrAfterMemoryDiscovered
+#### D.1.2.10 SetCacheMtrrAfterMemoryDiscovered
 
 _**TODO**: Add prototype_
 
-#### 13.2.2.11 BoardInitBeforeSiliconInit
+#### D.1.2.11 BoardInitBeforeSiliconInit
 
 ```c
 EFI_STATUS
@@ -189,7 +189,7 @@ BoardInitBeforeSiliconInit (
   );
 ```
 
-#### 13.2.2.12 SiliconPolicyUpdatePostMemory
+#### D.1.2.12 SiliconPolicyUpdatePostMemory
 
 ```c
 /**
@@ -219,7 +219,7 @@ SiliconPolicyUpdatePostMemory (
   );
 ```
 
-#### 13.2.2.13 BoardInitAfterSiliconInit
+#### D.1.2.13 BoardInitAfterSiliconInit
 
 ```c
 EFI_STATUS
@@ -229,7 +229,7 @@ BoardInitAfterSiliconInit (
   );
 ```
 
-#### 13.2.2.14 SetCacheMtrrAfterEndOfPei
+#### D.1.2.14 SetCacheMtrrAfterEndOfPei
 
 ```c
 /**
@@ -245,9 +245,9 @@ SetCacheMtrrAfterEndOfPei (
   )
 ```
 
-### 13.2.3 BoardPorting.DXE
+### D.1.3 BoardPorting.DXE
 
-#### 13.2.3.1 SiliconPolicyUpdateLate
+#### D.1.3.1 SiliconPolicyUpdateLate
 
 ```c
 /**
@@ -272,7 +272,7 @@ SiliconPolicyUpdateLate (
   );
 ```
 
-#### 13.2.3.2 PlatformBootManagerBeforeConsole (*)
+#### D.1.3.2 PlatformBootManagerBeforeConsole (*)
 
 ```c
 /**
@@ -290,7 +290,7 @@ PlatformBootManagerBeforeConsole (
   );
 ```
 
-#### 13.2.3.3 BoardInitAfterPciEnumeration
+#### D.1.3.3 BoardInitAfterPciEnumeration
 
 ```c
 EFI_STATUS
@@ -300,7 +300,7 @@ BoardInitAfterPciEnumeration (
   );
 ```
 
-#### 13.2.3.4 PlatformBootManagerAfterConsole(*)
+#### D.1.3.4 PlatformBootManagerAfterConsole(*)
 
 ```c
 /**
@@ -320,7 +320,7 @@ PlatformBootManagerAfterConsole (
   );
 ```
 
-#### 13.2.3.5 BoardInitReadyToBoot
+#### D.1.3.5 BoardInitReadyToBoot
 
 ```c
 EFI_STATUS
@@ -330,19 +330,19 @@ BoardInitReadyToBoot (
   );
 ```
 
-13.2.3.6 PlatformCreateAcpiTable
+D.1.3.6 PlatformCreateAcpiTable
 
 _**TODO**: Add prototype_
 
-13.2.3.7 PlatformUpdateAcpiTable
+D.1.3.7 PlatformUpdateAcpiTable
 
 _**TODO**: Add prototype_
 
-13.2.3.8 PlatformInstallAcpiTable
+D.1.3.8 PlatformInstallAcpiTable
 
 _**TODO**: Add prototype_
 
-#### 13.2.3.9 BoardInitEndOfFirmware
+#### D.1.3.9 BoardInitEndOfFirmware
 
 ```c
 EFI_STATUS
@@ -352,21 +352,21 @@ BoardInitEndOfFirmware (
   );
 ```
 
-### 13.2.4 BoardPorting.SMM
+### D.1.4 BoardPorting.SMM
 
-13.2.4.1 BoardEnableAcpiCallback
-
-_**TODO**: Add prototype_
-
-### 13.2.5 SiliconPorting.SEC
-
-13.2.5.1 TempRamInit
+D.1.4.1 BoardEnableAcpiCallback
 
 _**TODO**: Add prototype_
 
-### 13.2.6 SiliconPorting.PEI
+### D.1.5 SiliconPorting.SEC
 
-#### 13.2.6.1 SiliconPolicyInitPreMemory
+D.1.5.1 TempRamInit
+
+_**TODO**: Add prototype_
+
+### D.1.6 SiliconPorting.PEI
+
+#### D.1.6.1 SiliconPolicyInitPreMemory
 
 ```c
 /**
@@ -397,7 +397,7 @@ SiliconPolicyInitPreMemory (
   );
 ```
 
-#### 13.2.6.2 SiliconPolicyDonePreMemory
+#### D.1.6.2 SiliconPolicyDonePreMemory
 
 ```c
 /*
@@ -417,7 +417,7 @@ SiliconPolicyDonePreMemory (
   );
 ```
 
-#### 13.2.6.3 MemoryInit
+#### D.1.6.3 MemoryInit
 
 ```c
 /**
@@ -438,7 +438,7 @@ MemoryInit (
   );
 ```
 
-#### 13.2.6.4 SiliconPolicyInitPostMemory
+#### D.1.6.4 SiliconPolicyInitPostMemory
 
 ```c
 /**
@@ -469,7 +469,7 @@ SiliconPolicyInitPostMemory (
   );
 ```
 
-#### 13.2.6.5 SiliconPolicyDonePostMemory
+#### D.1.6.5 SiliconPolicyDonePostMemory
 
 ```c
 /*
@@ -489,13 +489,13 @@ SiliconPolicyDonePostMemory (
   );
 ```
 
-13.2.6.6 SiliconInit
+D.1.6.6 SiliconInit
 
 _**TODO**: Add prototype_
 
-### 13.2.7 SiliconPorting.DXE
+### D.1.7 SiliconPorting.DXE
 
-#### 13.2.7.1 SiliconPolicyInitLate
+#### D.1.7.1 SiliconPolicyInitLate
 
 ```c
 /**
@@ -521,7 +521,7 @@ SiliconPolicyInitLate (
   );
 ```
 
-#### 13.2.7.2 SiliconPolicyDoneLate
+#### D.1.7.2 SiliconPolicyDoneLate
 
 ```c
 /*
@@ -541,13 +541,13 @@ SiliconPolicyDoneLate (
   );
 ```
 
-13.2.7.3 SiliconInitAfterPciEnumeration
+D.1.7.3 SiliconInitAfterPciEnumeration
 
 _**TODO**: Add prototype_
 
-### 13.2.8 SiliconPorting.SMM
+### D.1.8 SiliconPorting.SMM
 
-#### 13.2.8.1 PchSmmCoreDispatcher
+#### D.1.8.1 PchSmmCoreDispatcher
 
 ```c
 /**
@@ -570,9 +570,9 @@ PchSmmCoreDispatcher (
   );
 ```
 
-### 13.2.9 Test.DXE
+### D.1.9 Test.DXE
 
-#### 13.2.9.1 ExitPmAuth
+#### D.1.9.1 ExitPmAuth
 
 ```c
 VOID
@@ -581,9 +581,9 @@ ExitPmAuth (
   );
 ```
 
-### 13.2.10 Debug.SEC
+### D.1.10 Debug.SEC
 
-#### 13.2.10.1 SecStartup (*)
+#### D.1.10.1 SecStartup (*)
 
 ```c
 /**
@@ -604,7 +604,7 @@ SecStartup (
   );
 ```
 
-#### 13.2.10.2 SecStartupPhase2 (*)
+#### D.1.10.2 SecStartupPhase2 (*)
 
 ```c
 /**
@@ -625,9 +625,9 @@ SecStartupPhase2 (
   );
 ```
 
-### 13.2.11 Debug.PEI
+### D.1.11 Debug.PEI
 
-#### 13.2.11.1 PeiCore (*)
+#### D.1.11.1 PeiCore (*)
 
 ```c
 /**
@@ -658,7 +658,7 @@ PeiCore (
   );
 ```
 
-#### 13.2.11.2 PeiDispatcher (*)
+#### D.1.11.2 PeiDispatcher (*)
 
 ```c
 /**
@@ -675,7 +675,7 @@ PeiDispatcher (
   );
 ```
 
-#### 13.2.11.3 SecTemporaryRamDone(*)
+#### D.1.11.3 SecTemporaryRamDone(*)
 
 ```c
 /**
@@ -693,7 +693,7 @@ SecTemporaryRamDone (
   );
 ```
 
-#### 13.2.11.4 DxeLoadCore (*)
+#### D.1.11.4 DxeLoadCore (*)
 
 ```c
 /**
@@ -716,10 +716,10 @@ DxeLoadCore (
   );
 ```
 
-### 13.2.12 Debug.DXE
+### D.1.12 Debug.DXE
 ```
 
-#### 13.2.12.1 DxeMain (*)
+#### D.1.12.1 DxeMain (*)
 
 ```c
 /**
@@ -737,7 +737,7 @@ DxeMain (
   );
 ```
 
-#### 13.2.12.2 CoreStartImage (*)
+#### D.1.12.2 CoreStartImage (*)
 
 ```c
 /**
@@ -768,7 +768,7 @@ CoreStartImage (
   );
 ```
 
-#### 13.2.12.3 CoreAllEfiServicesAvailable (*)
+#### D.1.12.3 CoreAllEfiServicesAvailable (*)
 
 ```c
 /**
@@ -784,7 +784,7 @@ CoreAllEfiServicesAvailable (
   );
 ```
 
-#### 13.2.12.4 BdsEntry (*)
+#### D.1.12.4 BdsEntry (*)
 
 ```c
 /**
@@ -806,7 +806,7 @@ IN EFI_BDS_ARCH_PROTOCOL ``*This
 
 `);`
 
-#### 13.2.12.5 EfiBootManagerDispatchDeferredImages (*)
+#### D.1.12.5 EfiBootManagerDispatchDeferredImages (*)
 
 ```c
 /**
@@ -823,7 +823,7 @@ EfiBootManagerDispatchDeferredImages (
   );
 ```
 
-#### 13.2.12.6 BootBootOptions(*)
+#### D.1.12.6 BootBootOptions(*)
 
 ```c
 /**
@@ -844,7 +844,7 @@ BootBootOptions (
   );
 ```
 
-#### 13.2.12.7 EfiSignalEventReadyToBoot (*)
+#### D.1.12.7 EfiSignalEventReadyToBoot (*)
 
 ```c
 /**
@@ -863,7 +863,7 @@ EfiSignalEventReadyToBoot (
   );
 ```
 
-#### 13.2.12.8 UefiMain (*)
+#### D.1.12.8 UefiMain (*)
 
 ```c
 /**
@@ -884,7 +884,7 @@ UefiMain (
   );
 ```
 
-#### 13.2.12.9 CoreExitBootServices (*)
+#### D.1.12.9 CoreExitBootServices (*)
 
 ```c
 /**
@@ -905,7 +905,7 @@ CoreExitBootServices (
   );
 ```
 
-#### 13.2.12.10 RuntimeDriverSetVirtualAddressMap (*)
+#### D.1.12.10 RuntimeDriverSetVirtualAddressMap (*)
 
 ```c
 /**
@@ -937,9 +937,9 @@ RuntimeDriverSetVirtualAddressMap (
   );
 ```
 
-### 13.2.13 Debug.SMM
+### D.1.13 Debug.SMM
 
-#### 13.2.13.1 SmmIplEntry (*)
+#### D.1.13.1 SmmIplEntry (*)
 
 ```c
 /**
@@ -964,7 +964,7 @@ SmmIplEntry (
   );
 ```
 
-#### 13.2.13.2 SmmMain (*)
+#### D.1.D.1 SmmMain (*)
 
 ```c
 /**
@@ -990,7 +990,7 @@ SmmMain (
   );
 ```
 
-#### 13.2.13.3 PiCpuSmmEntry (*)
+#### D.1.13.3 PiCpuSmmEntry (*)
 
 ```c
 /**
@@ -1011,7 +1011,7 @@ PiCpuSmmEntry (
   );
 ```
 
-#### 13.2.13.4 SmmRelocateBases (*)
+#### D.1.13.4 SmmRelocateBases (*)
 
 ```c
 /**
@@ -1027,11 +1027,11 @@ SmmRelocateBases (
   );
 ```
 
-#### 13.2.13.5 _SmiEntryPoint (*)
+#### D.1.13.5 _SmiEntryPoint (*)
 
 _**TODO**: Add prototype_
 
-#### 13.2.13.6 SmmEntryPoint (*)
+#### D.1.13.6 SmmEntryPoint (*)
 
 ```c
 /**
@@ -1050,6 +1050,6 @@ SmmEntryPoint (
   );
 ```
 
-#### 13.2.13.7 PlatformEnableAcpiCallback
+#### D.1.13.7 PlatformEnableAcpiCallback
 
 _**TODO**: Add prototype_

@@ -1,5 +1,5 @@
 <!--- @file
-  10.2 Key Function Invocation
+  Appendix A.2 Key Function Invocation
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,7 +29,7 @@
 
 -->
 
-## 10.2 Key Function Invocation
+## A.2 Key Function Invocation
 
 | Name                                                   | Purpose                                                    |
 | ------------------------------------------------------ | ---------------------------------------------------------- |

@@ -1,5 +1,5 @@
 <!--- @file
-  10 Appendix: Full Maps
+  Appendix C.1 Layout
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,10 +29,23 @@
 
 -->
 
-## 10.1 Overview
+## C.1 Layout
 
-This appendix section provides full reference maps of concepts covered in the specification.
+ACPI tables will be organized into a set of mandatory tables defined in this section
+and optional tables provided in the form of an SSDT.
 
-These maps are maintained in this section as they incorporate information across
-several sections.
+### C.1.1 Mandatory Tables
 
+The mandatory tables are composed of the minimum set of tables required to boot
+an ACPI compliant OS. These tables are intended to be present in Stage IV and
+later stages. The contents of these tables might differ based on build stage,
+it is described in the Table Contents sub-section.
+
+The following tables fall under the mandatory tables list:
+1. RSDP
+2. RSDT/XSDT
+3. FADT/FACS
+4. DSDT
+5. MADT
+6. MCFG
+7. HPET

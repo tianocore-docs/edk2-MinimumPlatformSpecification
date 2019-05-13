@@ -1,5 +1,5 @@
 <!--- @file
-  12.2 ACPI Table Contents
+  Appendix B.2 Test Point Check Infrastructure
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,34 +29,36 @@
 
 -->
 
-## 12.2 ACPI Table Contents
+## B.2 Test Point Check Infrastructure
 
-There are three types of tables supported. _Standard Static Tables,_
-_Differentiated System Description Table (DSDT), Secondary System Description
-Table (SSDT)._ The standard static tables have a defined structure in the ACPI
-specification. The contents of the DSDT and SSDT are described in this
-specification.
+Today's platforms are tested against several test suites such as Chipsec,
+Windows Hardware Security Test Infrastructure (HSTI), Windows Hardware Logo Kit
+(HLK), Linux UEFI Validation (LUV), and others. However, platforms may have
+platform-specific requirements not covered by test suites enforcing
+specification or general hardware compliance. The Test Point Check
+infrastructure is intended to test that actions such as MTRRs are configured
+correctly, FV HOBs are reported properly, no 3rd party options ROMs are
+executed before allowed, MemoryTypeInformation is reported correctly, and any
+other custom logic that platform implementer considers appropriate based on the
+platform requirements.
 
-### 12.2.1 DSDT Contents
+The Test Point infrastructure is supported by two primary libraries,
+TestPointLib and TestPointCheckLib. TestPointLib reports test results via the
+`ADAPTER_INFO_PLATFORM_TEST_POINT` structure defined below. The test result is
+validated in the TestPointCheckLib.
 
-DSDT is a mandatory fixed table that is pointed to by the FADT (Fixed ACPI
-Description Table).
+```c
+typedef struct {
+  UINT32 Version;
+  UINT32 Role;
+  CHAR16 ImplementationID[256];
+  UINT32 FeaturesSize;
 
-#### 12.2.1.1 Stage IV Build
+  //UINT8 FeaturesImplemented[]; <- PCD set to define features
+  //UINT8 FeaturesVerified[]; <- PCD read and set to determine features verified
+  //CHAR16 ErrorString[];
+} ADAPTER_INFO_PLATFORM_TEST_POINT;
+```
 
-Stage IV is intended to have the minimum configuration to boot a platform with
-basic features and minimal set of devices enabled. Similarly ACPI
-implementation should have a minimal framework implemented for ACPI compliant
-OS.
-
-The DSDT in this case should have a root and system bus defined. In addition to
-that, the DSDT will have device scopes for all the devices present in the
-minimum platform required packages (Section 8.1.1).
-
-#### 12.2.1.2 Stage VI Build
-
-In this case, DSDT will include the following Device scopes and objects:
-
-1. Device scopes for all PCI devices that need an ACPI component
-2. Global NVS area region defined
-3. Interrupt routing (_PRT method)
+![Test Point Check Infrastructure](/media/11_test_point_check_infrastructure.png)
+###### Figure 11 Test Point Check Infrastructure

@@ -1,5 +1,5 @@
 <!--- @file
-  12.3 ACPI Device Categorization
+  Appendix C.3 ACPI Device Categorization
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,14 +29,14 @@
 
 -->
 
-## 12.3 ACPI Device Categorization
+## C.3 ACPI Device Categorization
 
 ACPI device description tables such as DSDT and SSDT are comprised of device
 scopes and methods that define the capabilities and resources of an ACPI
 device. For scalability purposes, the ACPI devices are categorized in a manner
 that they can be easily plugged in and out of UEFI FW.
 
-### 12.3.1 Silicon Specific Devices
+### C.3.1 Silicon Specific Devices
 
 These devices are silicon specific and are assumed to not change with different
 SKUs and stepping of the silicon. These devices will become part of DSDT as it
@@ -45,7 +45,7 @@ is a mandatory table containing the fixed devices for the systems.
 The number of silicon devices present in the DSDT will be decided by the scope
 of minimum and full build.
 
-### 12.3.2 SKU Specific Devices
+### C.3.2 SKU Specific Devices
 
 These devices are SKU specific and are assumed to change based on various SKUs.
 They are considered to be dynamic as they can be enabled/disabled/modified
@@ -55,7 +55,7 @@ Because of their dynamic nature, these devices are added in the Platform SSDT.
 Every SKU will have a unique Platform SSDT installed. It will only contain
 devices present on that platform.
 
-### 12.3.3 Board Specific Devices
+### C.3.3 Board Specific Devices
 
 These devices are board specific and are assumed to change based on the various
 board SKUs. These devices will also become part of SSDTs. These devices can
@@ -63,7 +63,7 @@ have an SSDT of their own or get added to the platform SSDT depending on their
 availability on multiple SKUs. A fairly common board device will be added to
 the platform SSDT and the other devices can have a SSDT of their own.
 
-### 12.3.4 Feature Specific Devices/Methods
+### C.3.4 Feature Specific Devices/Methods
 
 These devices or methods are optional as they are exposed to handle certain
 advanced features. They will be added to DSDT or SSDT depending on the device

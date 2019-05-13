@@ -63,18 +63,18 @@
 * [Table 26 Test Point Results](4_stage_2_memory_functional/49_test_point_results.md#table-26-test-point-results)
 
 **Stage III**
-* [Table 27 Stage III Firmware Volumes](3_stage_1_minimum_debug/52_firmware_volumes.md#table-27-stage-iii-firmware-volumes)
-* [Table 28 Stage III FV and Component Layouts](3_stage_1_minimum_debug/52_firmware_volumes.md#table-28-stage-iii-fv-and-component-layouts)
-* [Table 29 Stage III DXE UEFI Components](3_stage_1_minimum_debug/53_modules.md#table-29-stage-iii-dxe-uefi-components)
-* [Table 30 Stage III Platform Architecture Libraries](3_stage_1_minimum_debug/53_modules.md#table-30-stage-iii-platform-architecture-libraries)
-* [Table 31 Stage III Required PEI Functions](3_stage_1_minimum_debug/54_required_functions.md#table-31-stage-iii-required-pei-functions)
-* [Table 32 Stage III PEI Functions](3_stage_1_minimum_debug/54_required_functions.md#table-32-stage-iii-pei-functions)
-* [Table 33 Stage III DXE Functions](3_stage_1_minimum_debug/54_required_functions.md#table-33-stage-iii-dxe-functions)
-* [Table 34 Stage III DXE Interfaces](3_stage_1_minimum_debug/54_required_functions.md#table-34-stage-iii-dxe-interfaces)
-* [Table 35 Stage III Flash Map Configuration PCDs](3_stage_1_minimum_debug/55_configuration.md#table-35-stage-iii-flash-map-configuration-pcds)
-* [Table 36 Stage III Driver Configuration](3_stage_1_minimum_debug/55_configuration.md#table-36-stage-iii-driver-configuration)
-* [Table 37 Stage III Build Files](3_stage_1_minimum_debug/58_build_files.md#table-37-stage-iii-build-files)
-* [Table 38 Stage III Test Point Results](3_stage_1_minimum_debug/59_test_point_results.md#table-38-stage-iii-test-point-results)
+* [Table 27 Stage III Firmware Volumes](5_stage_3_boot_to_uefi_shell/52_firmware_volumes.md#table-27-stage-iii-firmware-volumes)
+* [Table 28 Stage III FV and Component Layouts](5_stage_3_boot_to_uefi_shell/52_firmware_volumes.md#table-28-stage-iii-fv-and-component-layouts)
+* [Table 29 Stage III DXE UEFI Components](5_stage_3_boot_to_uefi_shell/53_modules.md#table-29-stage-iii-dxe-uefi-components)
+* [Table 30 Stage III Platform Architecture Libraries](5_stage_3_boot_to_uefi_shell/53_modules.md#table-30-stage-iii-platform-architecture-libraries)
+* [Table 31 Stage III Required PEI Functions](5_stage_3_boot_to_uefi_shell/54_required_functions.md#table-31-stage-iii-required-pei-functions)
+* [Table 32 Stage III PEI Functions](5_stage_3_boot_to_uefi_shell/54_required_functions.md#table-32-stage-iii-pei-functions)
+* [Table 33 Stage III DXE Functions](5_stage_3_boot_to_uefi_shell/54_required_functions.md#table-33-stage-iii-dxe-functions)
+* [Table 34 Stage III DXE Interfaces](5_stage_3_boot_to_uefi_shell/54_required_functions.md#table-34-stage-iii-dxe-interfaces)
+* [Table 35 Stage III Flash Map Configuration PCDs](5_stage_3_boot_to_uefi_shell/55_configuration.md#table-35-stage-iii-flash-map-configuration-pcds)
+* [Table 36 Stage III Driver Configuration](5_stage_3_boot_to_uefi_shell/55_configuration.md#table-36-stage-iii-driver-configuration)
+* [Table 37 Stage III Build Files](5_stage_3_boot_to_uefi_shell/58_build_files.md#table-37-stage-iii-build-files)
+* [Table 38 Stage III Test Point Results](5_stage_3_boot_to_uefi_shell/59_test_point_results.md#table-38-stage-iii-test-point-results)
 
 **Stage IV**
 * [Table 39 Stage IV Firmware Volumes](6_stage_4_boot_to_os/62_firmware_volumes.md#table-39-stage-iv-firmware-volumes)
@@ -115,5 +115,5 @@
 * [Table 70 Advanced Feature Template](8_stage_6_advanced_feature_selection/85_advanced_feature_template.md#table-70-advanced-feature-template)
 
 **Appendix**
-* [Table 71 Full Firmware Volume Layout](10_full_maps/101_firmware_volume_layout.md#table-71-full-firmware-volume-layout)
-* [Table 72 Key Function Invocation](10_full_maps/102_key_function_invocation.md#table-72-key-function-invocation)
+* [Table 71 Full Firmware Volume Layout](appendix_a_full_maps/a1_firmware_volume_layout.md#table-71-full-firmware-volume-layout)
+* [Table 72 Key Function Invocation](appendix_a_full_maps/a2_key_function_invocation.md#table-72-key-function-invocation)

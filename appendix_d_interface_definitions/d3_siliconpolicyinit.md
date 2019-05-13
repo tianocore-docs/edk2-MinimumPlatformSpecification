@@ -1,5 +1,5 @@
 <!--- @file
-  13.4 SiliconPolicyInit
+  Appendix D.3 SiliconPolicyInit
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,9 +29,9 @@
 
 -->
 
-## 13.4 SiliconPolicyInit
+## D.3 SiliconPolicyInit
 
-### 13.4.1 SiliconPolicyInitLib
+### D.3.1 SiliconPolicyInitLib
 
 The SiliconPolicyInitLib provides functions that silicon code initializes the default policy.
 
@@ -179,7 +179,7 @@ SiliconPolicyDoneLate (
 #endif
 ```
 
-### 13.4.2 SiliconPolicyUpdateLib
+### D.3.2 SiliconPolicyUpdateLib
 
 The SiliconPolicyUpdateLib provides functions that board code overrides the default policy.
 

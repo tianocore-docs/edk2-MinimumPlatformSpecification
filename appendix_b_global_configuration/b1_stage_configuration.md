@@ -1,5 +1,5 @@
 <!--- @file
-  11.1 Stage Configuration
+  Appendix B.1 Stage Configuration
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,7 +29,7 @@
 
 -->
 
-## 11.1 Stage Configuration
+## B.1 Stage Configuration
 
 ```ini
 [PcdsFeatureFlag]

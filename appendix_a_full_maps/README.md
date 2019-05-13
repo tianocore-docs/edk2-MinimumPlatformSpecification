@@ -1,5 +1,5 @@
 <!--- @file
-  12.4 Flow Diagrams
+  Appendix A Full Maps
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,13 +29,10 @@
 
 -->
 
-## 12.4 Flow Diagrams
+## Appendix A Full Maps Overview
 
-This section describes the flow for table integration and installing during
-boot. Device nodes will be generated and added to DSDT or SSDT by the device
-modules. Once the DSDT and SSDT are complete, they will be installed and
-published by the ACPI DXE driver.
+This appendix section provides full reference maps of concepts covered in the specification.
 
-![Figure 12 ACPI Platform FLow](/media/12_acpi_platform_flow.png)
-###### Figure 12 ACPI Platform Flow
+These maps are maintained in this section as they incorporate information across
+several sections.
 

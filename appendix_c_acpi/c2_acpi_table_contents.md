@@ -1,5 +1,5 @@
 <!--- @file
-  11 Appendix: Global Configuration
+  Appendix C.2 ACPI Table Contents
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,8 +29,34 @@
 
 -->
 
-## 11.1 Overview
+## C.2 ACPI Table Contents
 
-This appendix section provides configuration mechanisms that are global and therefore
-are not constrained to any particular stage section.
+There are three types of tables supported. _Standard Static Tables,_
+_Differentiated System Description Table (DSDT), Secondary System Description
+Table (SSDT)._ The standard static tables have a defined structure in the ACPI
+specification. The contents of the DSDT and SSDT are described in this
+specification.
 
+### C.2.1 DSDT Contents
+
+DSDT is a mandatory fixed table that is pointed to by the FADT (Fixed ACPI
+Description Table).
+
+#### C.2.1.1 Stage IV Build
+
+Stage IV is intended to have the minimum configuration to boot a platform with
+basic features and minimal set of devices enabled. Similarly ACPI
+implementation should have a minimal framework implemented for ACPI compliant
+OS.
+
+The DSDT in this case should have a root and system bus defined. In addition to
+that, the DSDT will have device scopes for all the devices present in the
+minimum platform required packages (Section 8.1.1).
+
+#### C.2.1.2 Stage VI Build
+
+In this case, DSDT will include the following Device scopes and objects:
+
+1. Device scopes for all PCI devices that need an ACPI component
+2. Global NVS area region defined
+3. Interrupt routing (_PRT method)

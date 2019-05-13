@@ -1,5 +1,5 @@
 <!--- @file
-  13.5 TestPoint
+  Appendix D.4 TestPoint
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,9 +29,9 @@
 
 -->
 
-## 13.5 TestPoint
+## D.4 TestPoint
 
-### 13.5.1 TestPointLib
+### D.4.1 TestPointLib
 
 The TestPointLib provides helper functions for implementing test points. This
 library is optional.
@@ -75,7 +75,7 @@ WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
 #define TEST_POINT_FEATURES_ITEM_NUMBER 2
 ```
 
-#### 13.5.1.1 ADAPTER_INFO_PLATFORM_TEST_POINT
+#### D.4.1.1 ADAPTER_INFO_PLATFORM_TEST_POINT
 
 ```c
 typedef struct {
@@ -93,7 +93,7 @@ typedef struct {
 //
 ```
 
-#### 13.5.1.2 TestPointLibSetTable
+#### D.4.1.2 TestPointLibSetTable
 
 ```c
 /**
@@ -117,7 +117,7 @@ TestPointLibSetTable (
   );
 ```
 
-#### 13.5.1.3 TestPointLibGetTable
+#### D.4.1.3 TestPointLibGetTable
 
 ```c
 /**
@@ -146,7 +146,7 @@ TestPointLibGetTable (
   );
 ```
 
-#### 13.5.1.4 TestPointLibSetFeaturesVerified
+#### D.4.1.4 TestPointLibSetFeaturesVerified
 
 ```c
 /**
@@ -174,7 +174,7 @@ TestPointLibSetFeaturesVerified (
   );
 ```
 
-#### 13.5.1.5 TestPointLibClearFeaturesVerified
+#### D.4.1.5 TestPointLibClearFeaturesVerified
 
 ```c
 /**
@@ -202,7 +202,7 @@ TestPointLibClearFeaturesVerified (
   );
 ```
 
-#### 13.5.1.6 TestPointLibAppendErrorString
+#### D.4.1.6 TestPointLibAppendErrorString
 
 ```c
 /**
@@ -228,7 +228,7 @@ TestPointLibAppendErrorString (
   );
 ```
 
-#### 13.5.1.7 TestPointLibSetErrorString
+#### D.4.1.7 TestPointLibSetErrorString
 
 ```c
 /**
@@ -290,7 +290,7 @@ extern EFI_GUID gAdapterInfoPlatformTestPointGuid;
 #endif
 ```
 
-### 13.5.2 TestPointCheckLib
+### D.4.2 TestPointCheckLib
 
 ```c
 /** @file
@@ -312,7 +312,7 @@ WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
 #include <PiPei.h>
 #include <Uefi.h>
 
-13.5.2.1	Test Point Hook Points
+D.4.2.1	Test Point Hook Points
 //
 // Below is Test Point Hook Point.
 //
@@ -541,7 +541,7 @@ TestPointSmmExitBootServices (
   );
 ```
 
-#### 13.5.2.2 MinPlatformPkg Macro Definitions
+#### D.4.2.2 MinPlatformPkg Macro Definitions
 
 ```c
 //
@@ -684,7 +684,7 @@ TestPointSmmExitBootServices (
 #define   TEST_POINT_BYTE8_READY_TO_BOOT_HSTI_TABLE_FUNCTIONAL_ERROR_STRING                      L"No HSTI\r\n"
 ```
 
-#### 13.5.2.3 ADAPTER_INFO_PLATFORM_TEST_POINT_STRUCT
+#### D.4.2.3 ADAPTER_INFO_PLATFORM_TEST_POINT_STRUCT
 
 ```c
 #pragma pack (1)

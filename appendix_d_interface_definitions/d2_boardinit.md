@@ -1,5 +1,5 @@
 <!--- @file
-  13.3 BoardInit
+  Appendix D.2 BoardInit
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 
@@ -29,9 +29,9 @@
 
 -->
 
-## 13.3 BoardInit
+## D.2 BoardInit
 
-### 13.3.1 BoardInitSupportLib
+### D.2.1 BoardInitSupportLib
 
 ```c
 /** @file
@@ -128,7 +128,7 @@ BoardInitEndOfFirmware (
 #endif
 ```
 
-### 13.3.2 MultiBoardInitSupportLib
+### D.2.2 MultiBoardInitSupportLib
 
 ```c
 /** @file
