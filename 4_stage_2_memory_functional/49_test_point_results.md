@@ -31,11 +31,11 @@
 
 ## 4.9 Test Point Results
 
-| `Test Point`                                         | `Test Subject`                 | `Test Overview`                                                                             | `Reporting Mechanism`                                                             |
-| ---------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------  | --------------------------------------------------------------------------------- |
-| TestPointMemoryDiscoveredMtrrFunctional ()           | MTRR after memory discovered   | Verifies MTRR settings.<br /><br />(No overlap, PEI memory WB, Flash region is WP, MMIO UC) | Dump result to serial log.<br /><br/ >Set ADAPTER_INFO_PLATFORM_TEST_POINT_STRUCT |
-| TestPointMemoryDiscoveredMemoryResourceFunctional () | Resource description HOB       | No memory resource overlap.                                                                 | Dump result to serial log.<br /><br />Set ADAPTER_INFO_PLATFORM_TEST_POINT_STRUCT |
-| TestPointMemoryDiscoveredFvInfoFunctional ()         | FV HOB and FV info PPI         | FV HOB and FV info PPI.                                                                     | Dump result to serial log.<br /><br />Set ADAPTER_INFO_PLATFORM_TEST_POINT_STRUCT |
+| `Test Point`                                                           | `Test Subject`                 | `Test Overview`                                                                             | `Reporting Mechanism`                                                                              |
+| ---------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------  | -------------------------------------------------------------------------------------------------- |
+| TestPointMemory<br />DiscoveredMtrr<br />Functional ()                 | MTRR after memory discovered   | Verifies MTRR settings.<br /><br />(No overlap, PEI memory WB, Flash region is WP, MMIO UC) | Dump result to serial log.<br /><br />Set ADAPTER\_INFO\_<br />PLATFORM\_TEST\_<br />POINT\_STRUCT |
+| TestPointMemory<br />DiscoveredMemory<br />Resource<br />Functional () | Resource description HOB       | No memory resource overlap.                                                                 | Dump result to serial log.<br /><br />Set ADAPTER\_INFO\_<br />PLATFORM\_TEST\_<br />POINT\_STRUCT |
+| TestPointMemory<br />DiscoveredFvInfo<br />Functional ()               | FV HOB and FV info PPI         | FV HOB and FV info PPI.                                                                     | Dump result to serial log.<br /><br />Set ADAPTER\_INFO\_<br />PLATFORM\_TEST\_<br />POINT\_STRUCT |
 
 ###### Table 26 Test Point Results
 

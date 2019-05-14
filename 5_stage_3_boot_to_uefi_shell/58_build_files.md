@@ -33,8 +33,8 @@
 
 This is appended to previous Build files section.
 
-| `Name`                                          | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments` |
-| ----------------------------------------------- | ---------- | ---------------------- | ------------- | ---------- |
-| MinPlatformPkg\Include\CoreUefiBootInclude.fdf  | Board      | No                     | None          |            |
+| `Name`                                                | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments` |
+| ----------------------------------------------------- | ---------- | ---------------------- | ------------- | ---------- |
+| MinPlatformPkg<br />\Include\CoreUefiBootInclude.fdf  | Board      | No                     | None          |            |
 
 ###### Table 37 Stage III Build Files

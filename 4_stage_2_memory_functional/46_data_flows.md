@@ -54,17 +54,17 @@ This silicon code may expose the APIs below.
 * An API to tell silicon code that all policy data have been updated, and they
   are ready to consume.
 
-| `Library`              | `Interface`                    | `Definition Location`      | `Producer` | `Consumer in FSP Boot Path` | `Consumer in EDK II Path` |
-| ---------------------- | ------------------------------ | -------------------------- | ---------- | --------------------------- | ------------------------- |
-| SiliconPolicyInitLib   | SiliconPolicyInitPreMemory     | Silicon                    | Silicon    | FspWrapperPlatformLib       | Platform                  |
-|                        | SiliconPolicyDonePreMemory     | Silicon                    | Silicon    | FspWrapperPlatformLib       | Platform                  |
-|                        | SiliconPolicyInitPostMemory    | Silicon                    | Silicon    | FspWrapperPlatformLib       | Platform                  |
-|                        | SiliconPolicyDonePostMemory    | Silicon                    | Silicon    | FspWrapperPlatformLib       | Platform                  |
-|                        | SiliconPolicyInitLate          | Silicon                    | Silicon    | FspWrapperPlatformLib       | Platform                  |
-|                        | SiliconPolicyDoneLate          | Silicon                    | Silicon    | FspWrapperPlatformLib       | Platform                  |
-| SiliconPolicyUpdateLib | SiliconPolicyUpdatePreMemory   | Minimum Platform / Silicon | Board      | FspWrapperPlatformLib       | Platform                  |
-|                        | SiliconPolicyUpdate PostMemory | Minimum Platform / Silicon | Board      | FspWrapperPlatformLib       | Platform                  |
-|                        | SiliconPolicyUpdateLate        | Minimum Platform / Silicon | Board      | FspWrapperPlatformLib       | Platform                  |
+| `Library`              | `Interface`                          | `Definition Location`           | `Producer` | `Consumer in FSP Boot Path`  | `Consumer in EDK II Path` |
+| ---------------------- | ------------------------------------ | ------------------------------- | ---------- | ---------------------------- | ------------------------- |
+| SiliconPolicyInitLib   | SiliconPolicy<br />InitPreMemory     | Silicon                         | Silicon    | FspWrapper<br />PlatformLib  | Platform                  |
+|                        | SiliconPolicy<br />DonePreMemory     | Silicon                         | Silicon    | FspWrapper<br />PlatformLib  | Platform                  |
+|                        | SiliconPolicy<br />InitPostMemory    | Silicon                         | Silicon    | FspWrapper<br />PlatformLib  | Platform                  |
+|                        | SiliconPolicy<br />DonePostMemory    | Silicon                         | Silicon    | FspWrapper<br />PlatformLib  | Platform                  |
+|                        | SiliconPolicy<br />InitLate          | Silicon                         | Silicon    | FspWrapper<br />PlatformLib  | Platform                  |
+|                        | SiliconPolicy<br />DoneLate          | Silicon                         | Silicon    | FspWrapper<br />PlatformLib  | Platform                  |
+| SiliconPolicyUpdateLib | SiliconPolicy<br />UpdatePreMemory   | Minimum Platform /<br />Silicon | Board      | FspWrapper<br />PlatformLib  | Platform                  |
+|                        | SiliconPolicy<br />Update PostMemory | Minimum Platform /<br />Silicon | Board      | FspWrapper<br />PlatformLib  | Platform                  |
+|                        | SiliconPolicy<br />UpdateLate        | Minimum Platform /<br />Silicon | Board      | FspWrapper<br />PlatformLib  | Platform                  |
 
 ###### Table 24 Silicon Policy Libraries
 

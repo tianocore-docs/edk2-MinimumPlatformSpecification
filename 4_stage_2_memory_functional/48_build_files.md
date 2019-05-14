@@ -33,8 +33,8 @@
 
 This is appended to previous Build Files section.
 
-| `Name`                                            | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments` |
-| ------------------------------------------------- | ---------- | ---------------------- | ------------- | ---------- |
-| MinPlatformPkg\Include\CorePostMemoryInclude.fdf  | Board      | No                     | None          |            |
+| `Name`                                                  | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments` |
+| ------------------------------------------------------- | ---------- | ---------------------- | ------------- | ---------- |
+| MinPlatformPkg<br />\Include\CorePostMemoryInclude.fdf  | Board      | No                     | None          |            |
 
 ###### Table 25 Stage II Build Files

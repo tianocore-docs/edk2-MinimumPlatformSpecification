@@ -43,12 +43,12 @@ These definitions may be both source and binary in nature.
 |                                        | KEK             | Board      | Core       | KEK variable                                                                        | Platform Policy: UEFI Secure Boot        |
 |                                        | db              | Board      | Core       | db variable                                                                         | Platform Policy: UEFI Secure Boot        |
 |                                        | dbx             | Board      | Core       | dbx variable                                                                        | Platform Policy: UEFI Secure Boot        |
-| PcdTpmInstance Guid                    | GUID            | Board      | Core       | Select TPM instance                                                                 | Platform Policy: TCG trusted boot        |
-| PcdTpm2InitializationPolicy            | UINT8           | Board      | Core       | Choose if TPM driver need send Tpm2Init.                                            | Platform Policy: TCG trusted boot        |
-| PcdTpm2SelfTestPolicy                  | UINT8           | Board      | Core       | Choose if TPM driver need send Tpm2SelfTest                                         | Platform Policy: TCG trusted boot        |
+| PcdTpmInstance<br />Guid               | GUID            | Board      | Core       | Select TPM instance                                                                 | Platform Policy: TCG trusted boot        |
+| PcdTpm2<br />InitializationPolicy      | UINT8           | Board      | Core       | Choose if TPM driver need send Tpm2Init.                                            | Platform Policy: TCG trusted boot        |
+| PcdTpm2Self<br />TestPolicy            | UINT8           | Board      | Core       | Choose if TPM driver need send Tpm2SelfTest                                         | Platform Policy: TCG trusted boot        |
 | PRE_MEM_SILICON_POLICY                 | MOR data        | Board      | Silicon    | The board code consumes the MOR variable and pass it to MemoryInit module as policy | Platform Policy: TCG MOR                 |
-| L"MemoryOverwriteRequestControl"       | MOR Variable    | OS         | Board      | OS indicates to UEFI FW the MOR request.                                            | Platform Policy: TCG MOR                 |
-| PcdVTdPolicyPropertyMask               | VTd policy mask | Platform   | Core       | VTd policy                                                                          | Platform Policy: DMA                     |
+| L"MemoryOverwrite<br />RequestControl" | MOR Variable    | OS         | Board      | OS indicates to UEFI FW the MOR request.                                            | Platform Policy: TCG MOR                 |
+| PcdVTdPolicy<br />PropertyMask         | VTd policy mask | Platform   | Core       | VTd policy                                                                          | Platform Policy: DMA                     |
 
 ###### Table 62 Stage V Security Configuration
 

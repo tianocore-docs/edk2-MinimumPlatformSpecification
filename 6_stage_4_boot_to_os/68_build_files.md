@@ -33,8 +33,8 @@
 
 This is appended to previous Build files section.
 
-| `Name`                                       | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments`                           |
-| -------------------------------------------- | ---------- | ---------------------- | ------------- | ------------------------------------ |
-| MinPlatformPkg\Include\CoreOsBootInclude.fdf | Board      | No                     | None          | Stage IV required components         |
+| `Name`                                             | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments`                           |
+| -------------------------------------------------- | ---------- | ---------------------- | ------------- | ------------------------------------ |
+| MinPlatformPkg<br />\Include\CoreOsBootInclude.fdf | Board      | No                     | None          | Stage IV required components         |
 
 ###### Table 51 Stage IV Build Files

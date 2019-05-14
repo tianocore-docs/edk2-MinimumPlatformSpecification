@@ -43,14 +43,14 @@ content as applicable for a given system. The build is coordinated by the board
 package which should include standard build files from the minimum platform
 package or other dependent packages such as a silicon package.
 
-| `Name`                                           | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments`                                                               |
-| ------------------------------------------------ | ---------- | ---------------------- | ------------- | ------------------------------------------------------------------------ |
-| MinPlatformPkg\Include\CoreCommonLib.dsc         | Board      | No                     | None          | Stage I-V common libraries                                               |
-| MinPlatformPkg\Include\CorePeiInclude.dsc        | Board      | No                     | None          | Combination of Stage I-V that will be processed by compilation building  |
-| MinPlatformPkg\Include\CorePeiLib.dsc            | Board      | No                     | None          | Combination of Stage I-V that will be processed by compilation building  |
-| BoardPkg\BoardName\BoardPkg.dsc                  | Build      | Yes                    | None          | Primary build file.                                                      |
-| `Name`                                           | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments`                                                               |
-| MinPlatformPkg\Include\CorePreMemoryInclude.fdf  | Board      | No                     | None          | Combination of Stage I-II that will be processed by compilation building |
-| BoardPkg\BoardName\BoardPkg.fdf                  | Build      | Yes                    | Yes           | Combination of Stage I-V that will be processed by compilation building  |
+| `Name`                                                 | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments`                                                               |
+| ------------------------------------------------------ | ---------- | ---------------------- | ------------- | ------------------------------------------------------------------------ |
+| MinPlatformPkg<br />\Include\CoreCommonLib.dsc         | Board      | No                     | None          | Stage I-V common libraries                                               |
+| MinPlatformPkg<br />\Include\CorePeiInclude.dsc        | Board      | No                     | None          | Combination of Stage I-V<br />that will be processed by compilation building  |
+| MinPlatformPkg<br />\Include\CorePeiLib.dsc            | Board      | No                     | None          | Combination of Stage I-V<br />that will be processed by compilation building  |
+| BoardPkg<br />\BoardName\BoardPkg.dsc                  | Build      | Yes                    | None          | Primary build file.                                                      |
+| `Name`                                                 | `Consumer` | `Standalone Buildable` | `FV Produced` | `Comments`                                                               |
+| MinPlatformPkg<br />\Include\CorePreMemoryInclude.fdf  | Board      | No                     | None          | Combination of Stage I-II<br />that will be processed by compilation building |
+| BoardPkg<br />\BoardName\BoardPkg.fdf                  | Build      | Yes                    | Yes           | Combination of Stage I-V<br />that will be processed by compilation building  |
 
 ###### Table 13 Stage I Build Files
