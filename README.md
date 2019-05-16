@@ -1,5 +1,5 @@
 <!--- @file
-  README.md for the Minimum Platform Specification
+  README.md for the EDK II Minimum Platform Specification
 
   Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
 

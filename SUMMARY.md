@@ -1,6 +1,6 @@
 # Summary
 
-* [Minimum Platform Specification](README.md#minimum-platform-specification)
+* [EDK II Minimum Platform Specification](README.md#edk-ii-minimum-platform-specification)
 * [Tables](TABLES.md#tables)
 * [Figures](FIGURES.md#figures)
 * [1 Introduction](1_introduction/README.md#1-introduction)

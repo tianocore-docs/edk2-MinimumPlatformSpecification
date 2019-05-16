@@ -1,7 +1,7 @@
 {
   "variables" : {
     "draft"   : "yes",
-    "title"   : "Minimum Platform Specification",
+    "title"   : "EDK II Minimum Platform Specification",
     "version" : "Revision 0.7"
   },
 
