@@ -1,7 +1,7 @@
 <!--- @file
   8.3 Configuration
 
-  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2019 - 2020, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -33,9 +33,11 @@
 
 ### 8.3.1 FV Related Configuration
 
-| `PCD`                                                | `Purpose`                          |
-| ---------------------------------------------------- | ---------------------------------- |
-| gMinPlatformPkgTokenSpaceGuid.PcdFlashFvAdvancedBase | Advanced Features FV base address. |
-| gMinPlatformPkgTokenSpaceGuid.PcdFlashFvAdvancedSize | Advanced Features FV size.         |
+| `PCD`                                                           | `Purpose`                                     |
+| --------------------------------------------------------------- | --------------------------------------------- |
+| gMinPlatformPkgTokenSpaceGuid.PcdFlashFvAdvancedPreMemoryBase   | Pre-memory advanced features FV base address. |
+| gMinPlatformPkgTokenSpaceGuid.PcdFlashFvAdvancedPreMemorySize   | Pre-memory advanced features FV size.         |
+| gMinPlatformPkgTokenSpaceGuid.PcdFlashFvAdvancedBase            | Advanced Features FV base address.            |
+| gMinPlatformPkgTokenSpaceGuid.PcdFlashFvAdvancedSize            | Advanced Features FV size.                    |
 
 ###### Table 69 Stage VI Flash Map Configuration PCDs
