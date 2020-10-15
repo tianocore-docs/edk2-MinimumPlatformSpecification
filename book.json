@@ -4,7 +4,6 @@
     "title"   : "EDK II Minimum Platform Specification",
     "version" : "Revision 0.7"
   },
-
-  "plugins": ["puml"],
+  "plugins": ["puml-aleung"],
   "pluginsConfig": {}
 }
