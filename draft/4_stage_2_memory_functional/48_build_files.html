@@ -1,0 +1,1531 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.8 Build Files · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="49_test_point_results.html" />
+    
+    
+    <link rel="prev" href="47_additional_control_flows.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../#edk-ii-minimum-platform-specification">
+            
+                    
+                    EDK II Minimum Platform Specification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../TABLES.html">
+            
+                <a href="../TABLES.html#tables">
+            
+                    
+                    Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../FIGURES.html">
+            
+                <a href="../FIGURES.html#figures">
+            
+                    
+                    Figures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../1_introduction/">
+            
+                <a href="../1_introduction/#1-introduction">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../1_introduction/11_audience__document_scope.html">
+            
+                <a href="../1_introduction/11_audience__document_scope.html#11-audience--document-scope">
+            
+                    
+                    1.1 Audience / Document scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../1_introduction/12_document_flow.html">
+            
+                <a href="../1_introduction/12_document_flow.html#12-document-flow">
+            
+                    
+                    1.2 Document Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../1_introduction/13_terminology.html">
+            
+                <a href="../1_introduction/13_terminology.html#13-terminology">
+            
+                    
+                    1.3 Terminology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../1_introduction/14_reference_documents.html">
+            
+                <a href="../1_introduction/14_reference_documents.html#14-reference-documents">
+            
+                    
+                    1.4 Reference documents
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../2_architecture/">
+            
+                <a href="../2_architecture/#2-architecture">
+            
+                    
+                    2 Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../2_architecture/21_staged_architecture.html">
+            
+                <a href="../2_architecture/21_staged_architecture.html#21-staged-architecture">
+            
+                    
+                    2.1 Staged Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../2_architecture/22_modularity.html">
+            
+                <a href="../2_architecture/22_modularity.html#22-modularity">
+            
+                    
+                    2.2 Modularity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../2_architecture/23_execution.html">
+            
+                <a href="../2_architecture/23_execution.html#23-execution">
+            
+                    
+                    2.3 Execution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../2_architecture/24_organization.html">
+            
+                <a href="../2_architecture/24_organization.html#24-organization">
+            
+                    
+                    2.4 Organization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../2_architecture/25_platform_and_board_layer.html">
+            
+                <a href="../2_architecture/25_platform_and_board_layer.html#25-platform-and-board-layer">
+            
+                    
+                    2.5 Platform and Board Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../3_stage_1_minimum_debug/">
+            
+                <a href="../3_stage_1_minimum_debug/#3-stage-1-minimum-debug">
+            
+                    
+                    3 Stage I: Minimal Debug
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../3_stage_1_minimum_debug/32_firmware_volumes.html">
+            
+                <a href="../3_stage_1_minimum_debug/32_firmware_volumes.html#32-firmware-volumes">
+            
+                    
+                    3.2 Firmware Volumes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../3_stage_1_minimum_debug/33_modules.html">
+            
+                <a href="../3_stage_1_minimum_debug/33_modules.html#33-modules">
+            
+                    
+                    3.3 Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../3_stage_1_minimum_debug/34_required_functions.html">
+            
+                <a href="../3_stage_1_minimum_debug/34_required_functions.html#34-required-functions">
+            
+                    
+                    3.4 Required Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../3_stage_1_minimum_debug/35_configuration.html">
+            
+                <a href="../3_stage_1_minimum_debug/35_configuration.html#35-configuration">
+            
+                    
+                    3.5 Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../3_stage_1_minimum_debug/36_data_flows.html">
+            
+                <a href="../3_stage_1_minimum_debug/36_data_flows.html#36-data-flows">
+            
+                    
+                    3.6 Data Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../3_stage_1_minimum_debug/37_additional_control_flows.html">
+            
+                <a href="../3_stage_1_minimum_debug/37_additional_control_flows.html#37-additional-control-flows">
+            
+                    
+                    3.7 Additional Control Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../3_stage_1_minimum_debug/38_build_files.html">
+            
+                <a href="../3_stage_1_minimum_debug/38_build_files.html#38-build-files">
+            
+                    
+                    3.8 Build Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../3_stage_1_minimum_debug/39_test_point_results.html">
+            
+                <a href="../3_stage_1_minimum_debug/39_test_point_results.html#39-test-point-results">
+            
+                    
+                    3.9 Test Point Results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../3_stage_1_minimum_debug/310_functional_exit_criteria.html">
+            
+                <a href="../3_stage_1_minimum_debug/310_functional_exit_criteria.html#310-functional-exit-criteria">
+            
+                    
+                    3.10 Functional Exit Criteria
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../3_stage_1_minimum_debug/311_stage_enabling_checklist.html">
+            
+                <a href="../3_stage_1_minimum_debug/311_stage_enabling_checklist.html#311-stage-enabling-checklist">
+            
+                    
+                    3.11 Stage Enabling Checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./#4-stage-2-memory-functional">
+            
+                    
+                    4 Stage II: Memory Functional
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="42_firmware_volumes.html">
+            
+                <a href="42_firmware_volumes.html#42-firmware-volumes">
+            
+                    
+                    4.2 Firmware Volumes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="43_modules.html">
+            
+                <a href="43_modules.html#43-modules">
+            
+                    
+                    4.3 Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="44_required_functions.html">
+            
+                <a href="44_required_functions.html#44-required-functions">
+            
+                    
+                    4.4 Required Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="45_configuration.html">
+            
+                <a href="45_configuration.html#45-configuration">
+            
+                    
+                    4.5 Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="46_data_flows.html">
+            
+                <a href="46_data_flows.html#46-data-flows">
+            
+                    
+                    4.6 Data Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="47_additional_control_flows.html">
+            
+                <a href="47_additional_control_flows.html#47-additional-control-flows">
+            
+                    
+                    4.7 Additional Control Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="48_build_files.html">
+            
+                <a href="48_build_files.html#48-build-files">
+            
+                    
+                    4.8 Build Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="49_test_point_results.html">
+            
+                <a href="49_test_point_results.html#49-test-point-results">
+            
+                    
+                    4.9 Test Point Results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="410_functional_exit_criteria.html">
+            
+                <a href="410_functional_exit_criteria.html#410-functional-exit-criteria">
+            
+                    
+                    4.10 Functional Exit Criteria
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="411_stage_enabling_checklist.html">
+            
+                <a href="411_stage_enabling_checklist.html#411-stage-enabling-checklist">
+            
+                    
+                    4.11 Stage Enabling Checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../5_stage_3_boot_to_uefi_shell/">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/#5-stage-3-boot-to-uefi-shell">
+            
+                    
+                    5 Stage III: Boot to UEFI Shell
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../5_stage_3_boot_to_uefi_shell/52_firmware_volumes.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/52_firmware_volumes.html#52-firmware-volumes">
+            
+                    
+                    5.2 Firmware Volumes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../5_stage_3_boot_to_uefi_shell/53_modules.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/53_modules.html#53-modules">
+            
+                    
+                    5.3 Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../5_stage_3_boot_to_uefi_shell/54_required_functions.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/54_required_functions.html#54-required-functions">
+            
+                    
+                    5.4 Required Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../5_stage_3_boot_to_uefi_shell/55_configuration.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/55_configuration.html#55-configuration">
+            
+                    
+                    5.5 Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../5_stage_3_boot_to_uefi_shell/56_data_flows.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/56_data_flows.html#56-data-flows">
+            
+                    
+                    5.6 Data Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../5_stage_3_boot_to_uefi_shell/57_additional_control_flows.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/57_additional_control_flows.html#57-additional-control-flows">
+            
+                    
+                    5.7 Additional Control Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../5_stage_3_boot_to_uefi_shell/58_build_files.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/58_build_files.html#58-build-files">
+            
+                    
+                    5.8 Build Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../5_stage_3_boot_to_uefi_shell/59_test_point_results.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/59_test_point_results.html#59-test-point-results">
+            
+                    
+                    5.9 Test Point Results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../5_stage_3_boot_to_uefi_shell/510_functional_exit_criteria.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/510_functional_exit_criteria.html#510-functional-exit-criteria">
+            
+                    
+                    5.10 Functional Exit Criteria
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../5_stage_3_boot_to_uefi_shell/511_stage_enabling_checklist.html">
+            
+                <a href="../5_stage_3_boot_to_uefi_shell/511_stage_enabling_checklist.html#511-stage-enabling-checklist">
+            
+                    
+                    5.11 Stage Enabling Checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../6_stage_4_boot_to_os/">
+            
+                <a href="../6_stage_4_boot_to_os/#6-stage-4-boot-to-os">
+            
+                    
+                    6 Stage IV: Boot to OS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../6_stage_4_boot_to_os/62_firmware_volumes.html">
+            
+                <a href="../6_stage_4_boot_to_os/62_firmware_volumes.html#62-firmware-volumes">
+            
+                    
+                    6.2 Firmware Volumes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../6_stage_4_boot_to_os/63_modules.html">
+            
+                <a href="../6_stage_4_boot_to_os/63_modules.html#63-modules">
+            
+                    
+                    6.3 Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../6_stage_4_boot_to_os/64_required_functions.html">
+            
+                <a href="../6_stage_4_boot_to_os/64_required_functions.html#64-required-functions">
+            
+                    
+                    6.4 Required Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../6_stage_4_boot_to_os/65_configuration.html">
+            
+                <a href="../6_stage_4_boot_to_os/65_configuration.html#65-configuration">
+            
+                    
+                    6.5 Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../6_stage_4_boot_to_os/66_data_flows.html">
+            
+                <a href="../6_stage_4_boot_to_os/66_data_flows.html#66-data-flows">
+            
+                    
+                    6.6 Data Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../6_stage_4_boot_to_os/67_additional_control_flows.html">
+            
+                <a href="../6_stage_4_boot_to_os/67_additional_control_flows.html#67-additional-control-flows">
+            
+                    
+                    6.7 Additional Control Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../6_stage_4_boot_to_os/68_build_files.html">
+            
+                <a href="../6_stage_4_boot_to_os/68_build_files.html#68-build-files">
+            
+                    
+                    6.8 Build Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../6_stage_4_boot_to_os/69_test_point_results.html">
+            
+                <a href="../6_stage_4_boot_to_os/69_test_point_results.html#69-test-point-results">
+            
+                    
+                    6.9 Test Point Results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../6_stage_4_boot_to_os/610_functional_exit_criteria.html">
+            
+                <a href="../6_stage_4_boot_to_os/610_functional_exit_criteria.html#610-functional-exit-criteria">
+            
+                    
+                    6.10 Functional Exit Criteria
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../6_stage_4_boot_to_os/611_stage_enabling_checklist.html">
+            
+                <a href="../6_stage_4_boot_to_os/611_stage_enabling_checklist.html#611-stage-enabling-checklist">
+            
+                    
+                    6.11 Stage Enabling Checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../7_stage_5_security_enable/">
+            
+                <a href="../7_stage_5_security_enable/#7-stage-5-security-enable">
+            
+                    
+                    7 Stage V: Security Enable
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../7_stage_5_security_enable/72_firmware_volumes.html">
+            
+                <a href="../7_stage_5_security_enable/72_firmware_volumes.html#72-firmware-volumes">
+            
+                    
+                    7.2 Firmware Volumes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../7_stage_5_security_enable/73_modules.html">
+            
+                <a href="../7_stage_5_security_enable/73_modules.html#73-modules">
+            
+                    
+                    7.3 Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../7_stage_5_security_enable/74_required_functions.html">
+            
+                <a href="../7_stage_5_security_enable/74_required_functions.html#74-required-functions">
+            
+                    
+                    7.4 Required Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../7_stage_5_security_enable/75_configuration.html">
+            
+                <a href="../7_stage_5_security_enable/75_configuration.html#75-configuration">
+            
+                    
+                    7.5 Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../7_stage_5_security_enable/76_data_flows.html">
+            
+                <a href="../7_stage_5_security_enable/76_data_flows.html#76-data-flows">
+            
+                    
+                    7.6 Data Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../7_stage_5_security_enable/77_additional_control_flows.html">
+            
+                <a href="../7_stage_5_security_enable/77_additional_control_flows.html#77-additional-control-flows">
+            
+                    
+                    7.7 Additional Control Flows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../7_stage_5_security_enable/78_build_files.html">
+            
+                <a href="../7_stage_5_security_enable/78_build_files.html#78-build-files">
+            
+                    
+                    7.8 Build Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../7_stage_5_security_enable/79_test_point_results.html">
+            
+                <a href="../7_stage_5_security_enable/79_test_point_results.html#79-test-point-results">
+            
+                    
+                    7.9 Test Point Results
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../7_stage_5_security_enable/710_functional_exit_criteria.html">
+            
+                <a href="../7_stage_5_security_enable/710_functional_exit_criteria.html#710-functional-exit-criteria">
+            
+                    
+                    7.10 Functional Exit Criteria
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../7_stage_5_security_enable/711_stage_enabling_checklist.html">
+            
+                <a href="../7_stage_5_security_enable/711_stage_enabling_checklist.html#711-stage-enabling-checklist">
+            
+                    
+                    7.11 Stage Enabling Checklist
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../8_stage_6_advanced_feature_selection/">
+            
+                <a href="../8_stage_6_advanced_feature_selection/#8-stage-6-advanced-feature-selection">
+            
+                    
+                    8 Stage VI: Advanced Feature Selection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../8_stage_6_advanced_feature_selection/82_firmware_volumes.html">
+            
+                <a href="../8_stage_6_advanced_feature_selection/82_firmware_volumes.html#82-firmware-volumes">
+            
+                    
+                    8.2 Firmware Volumes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../8_stage_6_advanced_feature_selection/83_configuration.html">
+            
+                <a href="../8_stage_6_advanced_feature_selection/83_configuration.html#83-configuration">
+            
+                    
+                    8.3 Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../8_stage_6_advanced_feature_selection/84_advanced_feature_design.html">
+            
+                <a href="../8_stage_6_advanced_feature_selection/84_advanced_feature_design.html#84-advanced-feature-design">
+            
+                    
+                    8.4 Advanced Feature Design
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../9_stage_7_tuning/">
+            
+                <a href="../9_stage_7_tuning/#9-stage-7-tuning">
+            
+                    
+                    9 Stage VII: Tuning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../appendix_a_full_maps/">
+            
+                <a href="../appendix_a_full_maps/#appendix-a-full-maps">
+            
+                    
+                    Appendix A Full Maps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../appendix_a_full_maps/a1_firmware_volume_layout.html">
+            
+                <a href="../appendix_a_full_maps/a1_firmware_volume_layout.html#a1-firmware-volume-layout">
+            
+                    
+                    A.1 Firmware Volume Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../appendix_a_full_maps/a2_key_function_invocation.html">
+            
+                <a href="../appendix_a_full_maps/a2_key_function_invocation.html#a2-key-function-invocation">
+            
+                    
+                    A.2 Key Function Invocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../appendix_a_full_maps/a3_bds_hook_points.html">
+            
+                <a href="../appendix_a_full_maps/a3_bds_hook_points.html#a3-bds-hook-points">
+            
+                    
+                    A.3 BDS Hook Points
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../appendix_b_global_configuration/">
+            
+                <a href="../appendix_b_global_configuration/#appendix-b-global-configuration">
+            
+                    
+                    Appendix B Global Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../appendix_b_global_configuration/b1_stage_configuration.html">
+            
+                <a href="../appendix_b_global_configuration/b1_stage_configuration.html#b1-stage-configuration">
+            
+                    
+                    B.1 Stage Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../appendix_b_global_configuration/b2_test_point_check_infrastructure.html">
+            
+                <a href="../appendix_b_global_configuration/b2_test_point_check_infrastructure.html#b2-test-point-check-infrastructure">
+            
+                    
+                    B.2 Test Point Check Infrastructure
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../appendix_c_acpi/">
+            
+                <a href="../appendix_c_acpi/#appendix-c-acpi">
+            
+                    
+                    Appendix C ACPI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../appendix_c_acpi/c1_layout.html">
+            
+                <a href="../appendix_c_acpi/c1_layout.html#c1-layout">
+            
+                    
+                    C.1 Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../appendix_c_acpi/c2_acpi_table_contents.html">
+            
+                <a href="../appendix_c_acpi/c2_acpi_table_contents.html#c2-acpi-table-contents">
+            
+                    
+                    C.2 ACPI Table Contents
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../appendix_c_acpi/c3_acpi_device_categorization.html">
+            
+                <a href="../appendix_c_acpi/c3_acpi_device_categorization.html#c3-acpi-device-categorization">
+            
+                    
+                    C.3 ACPI Device Categorization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.4" data-path="../appendix_c_acpi/c4_flow_diagrams.html">
+            
+                <a href="../appendix_c_acpi/c4_flow_diagrams.html#c4-flow-diagrams">
+            
+                    
+                    C.4 Flow Diagrams
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../appendix_d_interface_definitions/">
+            
+                <a href="../appendix_d_interface_definitions/#appendix-d-interface-definitions">
+            
+                    
+                    Appendix D Interface Definitions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../appendix_d_interface_definitions/d1_required_functions.html">
+            
+                <a href="../appendix_d_interface_definitions/d1_required_functions.html#d1-required-functions">
+            
+                    
+                    D.1 Required Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../appendix_d_interface_definitions/d2_boardinit.html">
+            
+                <a href="../appendix_d_interface_definitions/d2_boardinit.html#d2-boardinit">
+            
+                    
+                    D.2 BoardInit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../appendix_d_interface_definitions/d3_siliconpolicyinit.html">
+            
+                <a href="../appendix_d_interface_definitions/d3_siliconpolicyinit.html#d3-siliconpolicyinit">
+            
+                    
+                    D.3 SiliconPolicyInit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.4" data-path="../appendix_d_interface_definitions/d4_testpoint.html">
+            
+                <a href="../appendix_d_interface_definitions/d4_testpoint.html#d4-testpoint">
+            
+                    
+                    D.4 TestPoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4.8 Build Files</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Minimum Platform Specification</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 06:42:28]</div>
+        <div style="text-align:right">Revision 0.7</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+  4.8 Build Files
+
+  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="48-build-files">4.8 Build Files</h2>
+<p>This is appended to previous Build Files section.</p>
+<table>
+<thead>
+<tr>
+<th><code>Name</code></th>
+<th><code>Consumer</code></th>
+<th><code>Standalone Buildable</code></th>
+<th><code>FV Produced</code></th>
+<th><code>Comments</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MinPlatformPkg<br>\Include\CorePostMemoryInclude.fdf</td>
+<td>Board</td>
+<td>No</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h6 id="table-25-stage-ii-build-files">Table 25 Stage II Build Files</h6>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Minimum Platform Specification</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 06:42:28]</div>
+        <div style="text-align:right">Revision 0.7</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="47_additional_control_flows.html#47-additional-control-flows" class="navigation navigation-prev " aria-label="Previous page: 4.7 Additional Control Flows">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="49_test_point_results.html#49-test-point-results" class="navigation navigation-next " aria-label="Next page: 4.9 Test Point Results">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.8 Build Files","level":"1.7.7","depth":2,"next":{"title":"4.9 Test Point Results","level":"1.7.8","depth":2,"anchor":"#49-test-point-results","path":"4_stage_2_memory_functional/49_test_point_results.md","ref":"4_stage_2_memory_functional/49_test_point_results.md#49-test-point-results","articles":[]},"previous":{"title":"4.7 Additional Control Flows","level":"1.7.6","depth":2,"anchor":"#47-additional-control-flows","path":"4_stage_2_memory_functional/47_additional_control_flows.md","ref":"4_stage_2_memory_functional/47_additional_control_flows.md#47-additional-control-flows","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"draft":"yes","title":"EDK II Minimum Platform Specification","version":"Revision 0.7"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4_stage_2_memory_functional/48_build_files.md","mtime":"2020-12-01T06:41:59.714Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T06:42:28.423Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
