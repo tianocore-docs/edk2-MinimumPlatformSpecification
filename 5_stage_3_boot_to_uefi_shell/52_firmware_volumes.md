@@ -74,3 +74,13 @@ Which yields this example extension of the flash map for MMIO storage (add to St
 ###### Table 28 Stage III FV and Component Layout
 
 See [Appendix: Full FV Map](10_full_maps/101_firmware_volume_layout.md "Full FV Map") for a more complete example Firmware Volume layout.
+
+When UEFI Universal Payload is used, the Stage III is implemented by the following firmware volume:
+| `Name`     | `Content`               | `Compressed` | `Parent FV` |
+| ---------- | ----------------------- | ------------ | ----------- |
+| FvUpl      | UEFI Universal Payload  | Yes           | None        |
+
+Which contains a single ELF executable:
+| `Binary`  | `FV` | `Components` | `Purpose` |
+| --------- | ---- | ------------ | --------- |
+| Stage III | FvUpl.fv | UPL.elf  | Universal payload binary which contains DXE services, dispatcher and all common drivers encapsulated in an ELF executable |
